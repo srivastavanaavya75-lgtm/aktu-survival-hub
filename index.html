@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AKTU Survival Hub</title>
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial,sans-serif;
+}
+
+/* BODY */
+
+body{
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    padding:25px;
+
+    background:linear-gradient(135deg,#2b001f,#4b1235,#2b001f);
+
+    color:white;
+
+    transition:0.4s ease;
+}
+
+/* LIGHT MODE */
+
+body.light{
+    background:linear-gradient(135deg,#ffe6f0,#fff0f6,#ffffff);
+    color:#4b1235;
+}
+
+body.light .container{
+    background:rgba(255,255,255,0.75);
+}
+
+body.light .subtitle,
+body.light .footer,
+body.light .features li{
+    color:#4b1235;
+}
+
+/* MAIN CONTAINER */
+
+.container{
+    width:95%;
+    max-width:1000px;
+
+    background:rgba(255,255,255,0.14);
+
+    backdrop-filter:blur(14px);
+
+    border-radius:35px;
+
+    padding:50px 40px;
+
+    text-align:center;
+
+    position:relative;
+
+    box-shadow:0 8px 30px rgba(0,0,0,0.35);
+
+    animation:fadeUp 1s ease;
+}
+
+/* THEME BUTTON */
+
+.theme-btn{
+    position:absolute;
+    top:20px;
+    right:20px;
+
+    width:55px;
+    height:55px;
+
+    border:none;
+    outline:none;
+
+    border-radius:50%;
+
+    background:rgba(255,255,255,0.18);
+
+    backdrop-filter:blur(10px);
+
+    color:white;
+
+    font-size:1.4rem;
+
+    cursor:pointer;
+
+    transition:0.3s ease;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.theme-btn:hover{
+    transform:scale(1.1) rotate(15deg);
+
+    background:rgba(255,255,255,0.28);
+}
+
+/* HEADING */
+
+h1{
+    font-size:4rem;
+    margin-bottom:20px;
+}
+
+/* SUBTITLE */
+
+.subtitle{
+    font-size:1.4rem;
+    color:#f1e7e7;
+    margin-bottom:45px;
+}
+
+/* BUTTONS */
+
+.buttons{
+    display:flex;
+    justify-content:center;
+    gap:25px;
+    flex-wrap:wrap;
+
+    margin-bottom:55px;
+}
+
+.buttons a{
+    text-decoration:none;
+
+    background:#f7ede8;
+    color:#4b1235;
+
+    padding:18px 34px;
+
+    border-radius:18px;
+
+    font-size:1.2rem;
+    font-weight:bold;
+
+    transition:0.3s ease;
+}
+
+.buttons a:hover{
+    transform:translateY(-8px) scale(1.05);
+
+    box-shadow:0 10px 22px rgba(0,0,0,0.35);
+}
+
+/* FEATURES */
+
+.features{
+    text-align:left;
+    max-width:420px;
+    margin:auto;
+}
+
+.features h2{
+    font-size:3rem;
+    margin-bottom:25px;
+}
+
+.features ul{
+    list-style:none;
+}
+
+.features li{
+    font-size:1.4rem;
+    margin-bottom:20px;
+
+    transition:0.3s ease;
+}
+
+.features li:hover{
+    transform:translateX(10px);
+}
+
+/* FOOTER */
+
+.footer{
+    margin-top:45px;
+    font-size:1.2rem;
+    opacity:0.9;
+}
+
+/* ANIMATION */
+
+@keyframes fadeUp{
+
+    from{
+        opacity:0;
+        transform:translateY(40px);
+    }
+
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+
+}
+
+/* MOBILE */
+
+@media(max-width:700px){
+
+    h1{
+        font-size:2.5rem;
+    }
+
+    .subtitle{
+        font-size:1rem;
+    }
+
+    .buttons a{
+        width:100%;
+    }
+
+    .features h2{
+        font-size:2.2rem;
+    }
+
+    .features li{
+        font-size:1.1rem;
+    }
+
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+    <!-- DARK MODE BUTTON -->
+
+    <button class="theme-btn" onclick="toggleTheme()">🌙</button>
+
+    <!-- HEADING -->
+
+    <h1>🎓 AKTU Survival Hub</h1>
+
+    <!-- SUBTITLE -->
+
+    <p class="subtitle">
+        Your one-stop platform for notes, PYQs, resources, and survival tools.
+    </p>
+
+    <!-- BUTTONS -->
+
+    <div class="buttons">
+
+        <a href="notes.html">📚 Notes</a>
+
+        <a href="pyqs.html">📝 PYQs</a>
+
+        <a href="resources.html">🚀 Resources</a>
+
+    </div>
+
+    <!-- FEATURES -->
+
+    <div class="features">
+
+        <h2>✨ Features</h2>
+
+        <ul>
+
+            <li>📚 AKTU Notes</li>
+
+            <li>📝 PYQs</li>
+
+            <li>🎯 Important Questions</li>
+
+            <li>📅 Exam Updates</li>
+
+        </ul>
+
+    </div>
+
+    <!-- FOOTER -->
+
+    <div class="footer">
+        Made with 🤍 by Naavya
+    </div>
+
+</div>
+
+<!-- SCRIPT -->
+
+<script>
+
+function toggleTheme(){
+
+    document.body.classList.toggle("light");
+
+}
+
+</script>
+
+</body>
+</html>
