@@ -53,7 +53,19 @@ This project was built to solve a real student problem:
 Now everything is centralized in a single dashboard.
 
 ---
+  screenshots
+    home pg - <img width="1867" height="905" alt="image" src="https://github.com/user-attachments/assets/f41a2cbd-997c-4a55-83a8-b35e31998090" />
+    notes pg - <img width="1860" height="876" alt="image" src="https://github.com/user-attachments/assets/ad421ae1-5a40-4c7f-8799-243ff4474281" /> 
+    pyqs pg - <img width="1905" height="905" alt="image" src="https://github.com/user-attachments/assets/4ec0d84e-d5f5-4e46-9836-9e5a5a26f200" />
+    resources pg - <img width="1846" height="898" alt="image" src="https://github.com/user-attachments/assets/0d641bf2-b6ac-4553-bd26-10f7ee59901f" />
 
+    <p align="center">
+  <img src="assets/screenshots/home.png" width="700"/>
+</p>
+
+
+
+    
 ## 🚀 Future Improvements
 
 - PYQs module per subject
