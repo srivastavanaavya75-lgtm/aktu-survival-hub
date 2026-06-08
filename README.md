@@ -5,7 +5,7 @@ A modern, student-friendly academic dashboard built to help AKTU students access
 ---
 
 ## 🌐 Live Demo
-👉 https://your-username.github.io/aktu-survival-hub/
+👉 https://srivastavanaavya75-lgtm.github.io/aktu-survival-hub/
 
 ---
 
